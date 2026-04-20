@@ -135,7 +135,7 @@ export default function GroceryListDetail({ list, onClose, onAddItem, onToggleIt
 
               {/* Line total */}
               <span style={{ fontSize: '14px', fontWeight: 600, color: item.checked ? '#10b981' : '#1f2937', flexShrink: 0 }}>
-                R {(item.price * item.quantity).toFixed(2)}
+                KSh {(item.price * item.quantity).toFixed(2)}
               </span>
 
               {/* Delete */}
