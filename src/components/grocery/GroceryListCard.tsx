@@ -33,7 +33,7 @@ export default function GroceryListCard({ list, onOpen, onDelete }: Props) {
       </div>
 
       {/* Info */}
-      <div style={{ flex: 1, minWidth: 0 }} onClick={() => onOpen(list)} role="button" style={{ flex: 1, minWidth: 0, cursor: 'pointer' }}>
+      <div style={{ flex: 1, minWidth: 0, cursor: 'pointer' }} onClick={() => onOpen(list)} role="button">
         <h3 style={{ margin: '0 0 2px', fontSize: '15px', fontWeight: 600, color: '#1f2937', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {list.name}
         </h3>

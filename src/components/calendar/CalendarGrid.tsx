@@ -8,11 +8,7 @@ interface Props {
   onSelectDate: (date: string) => void
 }
 
-const DAYS   = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const MONTHS = [
-  'January','February','March','April','May','June',
-  'July','August','September','October','November','December',
-]
+const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 export default function CalendarGrid({ year, month, entries, selectedDate, onSelectDate }: Props) {
   const today     = new Date()

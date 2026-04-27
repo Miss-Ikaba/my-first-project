@@ -12,7 +12,7 @@ const PERIOD_LABELS: Record<BudgetPeriod, string> = {
 }
 
 export default function BudgetPage() {
-  const { transactions, loading, error, addTransaction, deleteTransaction, getByPeriod, getSummary } = useBudget()
+  const { loading, error, addTransaction, deleteTransaction, getByPeriod, getSummary } = useBudget()
   const [activePeriod, setActivePeriod] = useState<BudgetPeriod>('monthly')
   const [showForm, setShowForm] = useState(false)
 
